@@ -13,6 +13,5 @@ public class operators {
         char c = (char)(grade + 8);          // char + int = int     here ASCII value of grade is added with 8
         System.out.println(c);
 
-
     }
 }
