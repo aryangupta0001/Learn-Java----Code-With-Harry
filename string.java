@@ -1,5 +1,3 @@
-import javax.naming.spi.NamingManager;
-
 public class string {
     public static void main(String[] args) {
         // String name = new String("Aryan");              // In Java Strings are not a primitivee DataType, it is a class, we have to create objects of this class type.
