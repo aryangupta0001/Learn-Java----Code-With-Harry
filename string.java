@@ -1,8 +1,7 @@
 public class string {
     public static void main(String[] args) {
-        // String name = new String("Aryan");              // In Java Strings are not a primitivee DataType, it is a class, we have to create objects of this class type.
+        // String name = new String("Aryan");              // In Java Strings are not a primitive DataType, it is a Class, we have to create objects of this class type.
         String name = "Aryan";                       // In Java String is a class, but Java also provides special support for Strings, so we can directly create its vrriables, just like Primitive Data Types.
-        
 
 
         // name = "Gupta";                                  // Although Strings are immutable in Java, but here if we give a new value to a String variable, then it will store new value. Actually Strings are immutable means that the string created in Memory can't be changed, but the variable can can be assigned new value, a new String will be created & its reference will be assigned to the existing variable leaving the old String unchanged.
@@ -24,7 +23,7 @@ public class string {
 
 
         // System.out.printf("A = %d\tB = %f\tname = %s\n", a, b, name);           //Java supports printf function just like in C
-        // System.out.format("A = %d\tB = %f\tname = %s\n", a, b, name);             // In Java we can use .format function also in place function
+        // System.out.format("A = %d\tB = %f\tname = %s\n", a, b, name);             // In Java we can use .format function also in place of printf() function
         
         // There is a minor difference between the use of .printf() & .format() functions in Java, .printf() only prints the formatted string to the console, but the .format can also be used to return the formatted string which can be further used in the program.
         
@@ -81,6 +80,34 @@ public class string {
         boolean starting = name2.startsWith("A");                   // .startsWith() returns true if a string starts with the substring provided as argument, else false.
         System.out.println(starting);
         System.out.println(name2.startsWith("a"));
+
+        boolean ending = name2.endsWith("ta");
+        System.out.println(ending);
+        System.out.println(name2.endsWith("A"));
+
+
+
+        System.out.println(name2.charAt(4));                            // .charAt() returns the character present at the index provided as argument to it.
+
+
+
+        System.out.println(name2.indexOf("a"));                             // .indexOf() takes a substring as argument & the index at which it first occurs.
+        System.out.println(name2.indexOf("a", 5));                  //.indexOf() can also take a starting index no. as argument from where it will start searching for substring in the main string. This argument is optional.
+
+        System.out.println(name2.lastIndexOf("a"));                         // .lastIndexOf() returns the last index at which the substring is found in the main string.
+        System.out.println(name2.lastIndexOf("a", 5));            // .lastIndexOf() can also take an index as 2nd argument, it will search for the provided substring in the main string before this index. Actually the .lastIndexOf() method works same as .indexOf() method, but in reverse order.
+
+
+
+        System.out.println(name2.equals("Aryan Gupta"));                // .equals() method is  used to check whether the string is equal to another string or not.
+        System.out.println(name2.equals("ARYAN GUPTA"));                // .equals() method is case sensitive. It will returns false if Upeercase & Lowercase does not match
+
+
+        System.out.println(name2.equalsIgnoreCase("Aryan GUPTA"));              // .equalsIgnoreCase() method works same as .equals() method, but it ignores the Cases, i.e Uppercase & Lowercase are same for it.
+
+
+
+
+
     }
 }
- 
